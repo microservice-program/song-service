@@ -22,7 +22,7 @@ import java.util.List;
 import static app.music.songservice.util.ValidationUtils.checkCondition;
 
 @RestController
-@RequestMapping("api/songs")
+@RequestMapping("api/v1/songs")
 @RequiredArgsConstructor
 public class SongController {
     private final SongService songService;

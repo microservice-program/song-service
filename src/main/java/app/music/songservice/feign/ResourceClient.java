@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @Component
-@FeignClient(value = "song-resource", url = "http://localhost:8080/api/resources")
+@FeignClient(value = "song-resource", url = "http://localhost:8080/api/v1/resources")
 public interface ResourceClient {
 
     @GetMapping("/{id}/check")
